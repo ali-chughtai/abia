@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting</title>
+    <style>
+        body{
+            background-color: rgb(42, 40, 40);
+             background-image: url(/shubham-dhage-cHVJBvEp8OM-unsplash.jpg);
+             /* background-size: 1820px 1080px; */
+             background-size: cover;
+             background-position-x: center;
+             width: 99%;
+             height: 100%;
+            /* position: absolute; */
+            background-repeat: no-repeat;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container1{
+            /* container1 will remain on top even while scroling down  */ 
+            position: sticky;
+            top:3px;
+            color: white;
+            width: 100%;
+            /* height: 58px; */
+            border: 10px;
+            border-color: black;
+            border-radius: 7px;
+            background-color: rgb(69, 22, 22);
+        }
+
+        .container2{
+            color: white;
+            background-color: rgb(31, 44, 45);
+            width: 30%;
+            /* height: 600px; */
+            border:3px rgb(69, 22, 22) solid;
+            border-radius:12px;
+            max-width: 30%;
+            margin: 0 auto;
+            margin-top: 300px;
+            opacity: 0.9;
+        }
+        .container3{
+            border: 3px none solid;
+            width: 70px;
+            height: 70px;
+            position: fixed;
+            right:3px;
+            bottom:3px;
+            opacity: 0.5;
+        }
+        .container4{
+            margin-top: 220px;
+            opacity: 0;
+        }
+        #setting{
+            color: rgb(0, 0, 0);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size:xx-large;
+            text-decoration: none;
+            margin-left: 2200px;
+            /* padding:; */
+        }
+        #setting:hover{
+            color:cornflowerblue;
+        }
+        #help:hover{
+            color:cornflowerblue;
+        }
+        #help{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: black;
+            font-size: x-large;
+            text-decoration: none;
+            margin-left: 87%;
+        }
+        #AboutUs{
+            color: rgb(0, 0, 0);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size:x-large;
+            text-decoration: none;
+            margin-left: 30px;
+            /* padding:; */
+        }
+        #AboutUs:hover{
+            color:cornflowerblue;
+        }
+        #brain{
+            width: 30%;
+            margin-left: 34%;
+        }
+        #loginHeading{
+            margin-left: 35.5%;
+            margin-top: 0px;
+            /* margin-bottom: 1%; */
+            /* font-size:x-large; */
+        }
+        #line2{
+            margin-left: 29%;
+            font-size:large;
+        }
+        .btn{
+            border: 4px black solid;
+            border-radius: 15px;
+            color: white;
+            background-color: rgb(69, 22, 22);
+            text-decoration: none;
+            font-size:70px;
+            font-weight: bold;
+            cursor:grab ;
+
+        }
+        .btn:hover{
+            color: rgb(33, 33, 128);
+            background-color: cornflowerblue;
+        }
+        #brain2{
+            width:65px;
+        }
+        #line1{
+            height: 3px;
+            background-color:rgb(69, 22, 22) ;
+            border: none;
+        }
+        .box{
+            display: inline-block;
+            width:150px;
+            height: 150px;
+            /* border: 2px solid black; */
+            margin: 2px;
+            margin-left: 45px;
+        }
+        #size1{
+            width: 45%;
+            margin-top: 30%;
+            margin-left: 30%;
+            margin-bottom: 1px;
+            cursor: grab;
+        }
+        #label1{
+            margin-left: 22%;
+            cursor: grab;
+        }
+        #label1:hover{
+            color:cornflowerblue ;
+        }
+        #size2{
+            width: 52%;
+            margin-top: 34%;
+            margin-left: 25px;
+            /* margin-bottom: 0px; */
+            cursor: grab;
+        }
+        #label2{
+            margin-left: 6%;
+            cursor: grab;
+        }
+        #label2:hover{
+            color: cornflowerblue;
+        }
+        #size3{
+            width: 47%;
+            margin-top: 27%;
+            margin-left: 23%;
+            margin-bottom: 3px;
+            cursor: grab;
+        }
+        #label3{
+            margin-left: 5px;
+            cursor: grab;
+        }
+        #label3:hover{
+            color: cornflowerblue;
+        }
+        #size4{
+            width: 67%;
+            margin-top: 27%;
+            margin-left: 17px;
+            margin-bottom: 7px;
+            cursor: grab;
+        }
+        #label4{
+            margin-left: 5%;
+            cursor: grab;
+        }
+        #label4:hover{
+            color:cornflowerblue
+        }
+        #size5{
+            width: 45%;
+            margin-top: 16%;
+            margin-left: 28%;
+            margin-bottom: 2px;
+            cursor: grab;
+        }
+        #label5{
+            margin-left: 35px;
+            cursor :grab;
+        }
+        #label5:hover{
+            color: cornflowerblue;
+        }
+        #size6{
+            width: 65%;
+            margin-top: 35%;
+            margin-left: 28px;
+            /* margin-bottom: 2px; */
+            cursor:grab
+        }
+        #label6{
+            margin-left: 14%;
+            cursor: grab;
+        }
+        #label6:hover{
+            color :cornflowerblue;
+        }
+        
+        
+
+        
+        
+        
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <!-- <a id="setting" href="/setting.html">Setting</a> -->
+        <a id="help" href="/help.html">Help</a>
+        <a id="AboutUs" href="/aboutUs.html">About Us</a>
+    </div>
+
+    <div class="container2">
+        <img id = "brain" src="/brain.png" alt="Error 404">
+        <h1 id="loginHeading">Settings</h1>
+        <a id="line2">Set your own ABIA visuals!</a>
+        <hr id="line1">
+        <div  class="box">
+            <a href=""><img id="size1" src="/darkMode.png" alt="Error 404"></a>
+        <Strong id="label1">Dark Mode</Strong>
+        </div>
+        <div  class="box">
+            <a href=""><img id="size2" src="/language.png" alt="Error 404"></a>
+        <Strong id="label2">Change Language</Strong>
+        </div>
+        <br>
+        <div class="box">
+            <a href=""><img id="size3" src="/changeFontStyle.png" alt="Error 404"></a>
+        <Strong id="label3">Change Font Style</Strong>
+        </div>
+        <div class="box">
+            <a href=""><img id="size4" src="/changeFont.png" alt="Error 404"></a>
+        <Strong id="label4">Change Font Size</Strong>
+        </div>
+        <br>
+        <div class="box">
+            <a href=""><img id="size5" src="/nightShift.png" alt="Error 404"></a>
+        <Strong id="label5">Night Shift</Strong>
+        </div>
+        <div class="box">
+            <a href="/userSignIn.html"><img id="size6" src="/resetSettings.png" alt="Error 404"></a>
+        <Strong id="label6">Reset Settings</Strong>
+        </div>
+
+         
+    </div>
+        
+
+    <div class="container3">
+        <img id="brain2" src="/brain.png" alt="Error 404">
+    </div>
+    <div class="container4">
+        <h3>testing</h3>
+    </div>
+    
+    
+</body>
+</html>

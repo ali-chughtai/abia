@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Sign up</title>
+</head>
+<body>
+    <!-- creating text boxes and different type of data to be fiiled in like siging up -->
+    <h1>Sign Up</h1>
+    <form action="backend.php">
+        <div> Name: <input type="text" name="myName"></div>
+        <br>
+        <div>Date Of Birth: <input type="date" name="myDate"> </div>
+        <br>
+        <div> Email: <input type="email" name="myEmail" > </div>
+        <br>
+        <div>Password: <input type="password" name="myPass"></div>
+        <br>
+        <div>Confirm Password: <input type="password" name="mPass"></div>
+        <br>
+        <div>Upload Profile Picture: <input type="file" name="myImage"> </div>
+        <br>
+        <div> Are you eligible? <input type="checkbox" name="myEligibility"> </div>
+        <br>
+        <div> Gender: Male<input type="radio" name="myGender" id=""> Female<input type="radio" name="myGender" id=""> </div>
+        <br>
+        <div> What made you use this software? :) <br><textarea name="myText"  cols="30" rows="10"></textarea> </div>
+        <br>
+        <div> <label for="Research?">Where did you got to know of this software?</label>
+            <select name="myResearch" id="Research">
+                <option value="Friends">Friends</option>
+                <option value="Social Media">Social Media</option>
+                <option value="Newspaper">Newspaper</option>
+                <option value="Google/Web">Google/Web</option>
+            </select>
+         </div>
+        <hr>
+        <br> 
+        <div> <input type="submit" value="Submit">
+        <input type="reset" value="Reset Form"> </div>
+    </form>
+</body>
+</html>

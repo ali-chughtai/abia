@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminSignIn</title>
+    <style>
+        body{
+            background-color: rgb(42, 40, 40);
+             background-image: url(/shubham-dhage-cHVJBvEp8OM-unsplash.jpg);
+             /* background-size: 1820px 1080px; */
+             background-size: cover;
+             background-position-x: center;
+             width: 99%;
+             height: 100%;
+            /* position: absolute; */
+            background-repeat: no-repeat;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container1{
+            /* container1 will remain on top even while scroling down  */ 
+            position: sticky;
+            top:3px;
+            color: white;
+            width: 100%;
+            /* height: 58px; */
+            border: 10px;
+            border-color: black;
+            border-radius: 7px;
+            background-color: rgb(69, 22, 22);
+        }
+
+        .container2{
+            color: white;
+            background-color: rgb(31, 44, 45);
+            width: 30%;
+            /* height: 600px; */
+            border:3px rgb(69, 22, 22) solid;
+            border-radius:12px;
+            max-width: 40%;
+            position: relative;
+            margin: 0 auto;
+            margin-top: 90px;
+            opacity: 0.9;
+        }
+        .container3{
+            border: 3px none solid;
+            width: 70px;
+            height: 70px;
+            position: fixed;
+            right:3px;
+            bottom:3px;
+            opacity: 0.5;
+        }
+        .container4{
+            margin-top: 180px;
+            opacity: 0;
+        }
+        #setting{
+            color: rgb(0, 0, 0);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size:x-large;
+            text-decoration: none;
+            margin-left: 1200px;
+            /* padding:; */
+        }
+        #setting:hover{
+            color:cornflowerblue;
+        }
+        #help:hover{
+            color:cornflowerblue;
+        }
+        #help{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: black;
+            font-size: x-large;
+            text-decoration: none;
+            margin-left: 30px;
+        }
+        #AboutUs{
+            color: rgb(0, 0, 0);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size:x-large;
+            text-decoration: none;
+            margin-left: 30px;
+            /* padding:; */
+        }
+        #AboutUs:hover{
+            color:cornflowerblue;
+        }
+        #brain{
+            width: 30%;
+            margin-left: 35%;
+        }
+        #loginHeading{
+            margin-left: 37%;
+            margin-top: 0px;
+            /* font-size:x-large; */
+        }
+        
+        #register{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: cornflowerblue;
+            font-size: larger;
+            text-decoration: none;
+            margin-left: 5px;
+        }
+        #register:hover{
+            color: darkgrey;
+        }
+        #donthaveaaccount{
+            font-size: large;
+            margin-left: 38%;
+        }
+        .btn{
+            border: 3px black solid;
+            width: 90px;
+            border-radius: 7px;
+            color: white;
+            background-color: rgb(69, 22, 22);
+            font-size:20px;
+            font-weight: bold;
+            text-decoration: none;
+             cursor:grab ; 
+            margin-left: 250px;
+            margin-top: 20px;
+
+        }
+        .btn:hover{
+            color: rgb(33, 33, 128);
+            background-color: cornflowerblue;
+        }
+        #brain2{
+            width:65px;
+        }
+        .emandps #email{
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-top:30px;
+            margin-left:90px;
+            font-size: 25px;
+            border-radius: 5px;
+            border: 5px solid rgb(90, 90, 90);
+
+
+        }
+        .emandps #pass{
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-top:30px;
+            margin-left:90px;
+            font-size: 25px;
+            border-radius: 5px;
+            border: 5px solid rgb(90, 90, 90);
+
+        }
+
+        #letsgo{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+             padding-left: 7px; 
+            cursor: grab;
+            margin-left: center;
+        }
+        #forgotpassword{
+            color: cornflowerblue;
+            font-size:large ;
+            margin-left: 21.5%;
+        }
+        #Clickhere{
+            /* margin-top: 50px; */
+            margin-left:2px ;
+        }
+        #line1{
+            height: 3px;
+            background-color:rgb(69, 22, 22) ;
+            border: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <a id="setting" href="/settings.html">Setting</a>
+        <a id="help" href="/help.html">Help</a>
+        <a id="AboutUs" href="/aboutUs.html">About Us</a>
+    </div>
+
+    <div class="container2">
+        <img id = "brain" src="/brain.png" alt="Error 404">
+        <h1 id="loginHeading">LOGIN </h1>
+        <Strong id="donthaveaaccount" >Get Started!</Strong>
+
+        <hr id="line1">
+        <br>
+        <div class="emandps">
+            <form action="backend.php">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <br>
+            <input type="password" name="pass" id="pass" placeholder="Password">
+        </form>
+        </div>
+        <div class="btn">
+            <a id="letsgo" href="">Let's go</a>
+        </div>
+        <br>
+        <div><strong id="forgotpassword" >Forgot Password?</strong><a class="btn" id="Clickhere" href="/forgotPassword.html">Click here</a> </div>
+        <br>
+    </div>
+
+    <div class="container3">
+        <img id="brain2" src="/brain.png" alt="Error 404">
+    </div>
+    <div class="container4">
+        <h3>testing</h3>
+    </div>
+    
+    
+</body>
+</html>

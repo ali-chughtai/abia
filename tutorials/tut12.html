@@ -1,0 +1,82 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment</title>
+    <style>
+
+        /* creating boxes and text within and in table form floating left and write with not overlapping each other, new thing is float and clear:: div#fruit.container == div id = "fruits" class ="container" */
+
+        *{       /*// default will be applied on all the contents of webpage*/
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: justify;
+        }
+        body{     /*main body of webpage*/
+            background-color: burlywood;
+        }
+
+        /* .container class created and every div or para having this classwill have all the properties listed below */
+        .container{
+            width: 950px;
+            border: 2px black solid;
+            background-color: cadetblue;
+            margin: auto;
+            
+            
+        }
+        /* same as container class */
+        .item{
+            border: 2px rgb(102, 110, 231) solid;
+            padding: 4px 4px;
+            margin :5px;
+            background-color: rgb(181, 204, 204);
+        }
+        #fruits{
+            width: 450px;
+            float: left;
+            clear: right;
+        }
+        #vegetables{
+            width: 450px;
+            float: right;
+            /* clear: both; */
+        }
+        #dryfruits{
+            /* width: 450px;*/ 
+            clear: both;  
+            /* float: none; */
+        }
+        #fastfood{
+            /* width: 450px;
+            clear: left; */
+        }
+        h2{
+            padding-left: 300px;
+        }
+    </style>
+ </head>
+ <body>
+    <div class="container">
+        <h2>Wisaal sabzi stored</h2>
+         <div id="fruits" class="item"> 
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere dolores laboriosam illo deserunt ipsa perferendis, saepe hic eligendi magnam voluptate qui voluptates provident?</p>
+         </div>
+         <div id="vegetables" class="item"> 
+            <h3>Vegetables</h3>
+            <p id="Vegetablespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facilis laboriosam, explicabo eius fugiat saepe sed iste nemo amet sit laudantium voluptates! Accusamus!</p>
+         </div>
+         <div id="dryfruits" class="item"> 
+            <h3>DryFruits</h3>
+            <p id="dryfruitspara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione vel atque doloremque asperiores ipsa cum expedita nisi velit, aspernatur alias quas pariatur consequatur!</p>
+         </div>
+         <div id="fastfood" class="item"> 
+            <h3>fastfood</h3>
+            <p id="fastfoodspara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione vel atque doloremque asperiores ipsa cum expedita nisi velit, aspernatur alias quas pariatur consequatur!</p>
+         </div>
+    </div>
+    
+ </body>
+ </html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Sign Up</title>
+    <style>
+        body{
+            background-color: rgb(42, 40, 40);
+             background-image: url(/shubham-dhage-cHVJBvEp8OM-unsplash.jpg);
+             /* background-size: 1820px 1080px; */
+             background-size: cover;
+             background-position-x: center;
+             width: 99%;
+             height: 100%;
+            /* position: absolute; */
+            background-repeat: no-repeat;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container1{
+            /* container1 will remain on top even while scroling down  */ 
+            position: sticky;
+            top:3px;
+            color: white;
+            width: 100%;
+            /* height: 58px; */
+            border: 10px;
+            border-color: black;
+            border-radius: 7px;
+            background-color: rgb(69, 22, 22);
+        }
+
+        .container2{
+            color: white;
+            background-color: rgb(31, 44, 45);
+            width: 40%;
+            /* height: 600px; */
+            border:3px rgb(69, 22, 22) solid;
+            border-radius:12px;
+            max-width: 60%;
+            position: relative;
+            margin: 0 auto;
+            margin-top: 90px;
+            opacity: 0.9;
+        }
+        .container3{
+            border: 3px none solid;
+            width: 70px;
+            height: 70px;
+            position: fixed;
+            right:3px;
+            bottom:3px;
+            opacity: 0.5;
+        }
+        .container4{
+            margin-top: 180px;
+            opacity: 0;
+        }
+        #setting{
+            color: rgb(0, 0, 0);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size:x-large;
+            text-decoration: none;
+            margin-left: 1200px;
+            /* padding:; */
+        }
+        #setting:hover{
+            color:cornflowerblue;
+        }
+        #help:hover{
+            color:cornflowerblue;
+        }
+        #help{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: black;
+            font-size: x-large;
+            text-decoration: none;
+            margin-left: 30px;
+        }
+        #AboutUs{
+            color: rgb(0, 0, 0);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size:x-large;
+            text-decoration: none;
+            margin-left: 30px;
+            /* padding:; */
+        }
+        #AboutUs:hover{
+            color:cornflowerblue;
+        }
+        #brain{
+            width: 120px;
+            margin-left: 38%;
+        }
+        #loginHeading{
+            margin-left: 40%;
+            margin-top: 0px;
+            /* font-size:x-large; */
+        }
+        #line2{
+            margin-left: 22%;
+            font-size:large;
+        }
+        .btn{
+            border: 4px black solid;
+            border-radius: 7px;
+            color: white;
+            background-color: rgb(69, 22, 22);
+            text-decoration: none;
+            font-size:70px;
+            font-weight: bold;
+            cursor:grab ;
+
+        }
+        .btn:hover{
+            color: rgb(33, 33, 128);
+            background-color: cornflowerblue;
+        }
+        
+        #brain2{
+            width:65px;
+        }
+        #register{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: cornflowerblue;
+            font-size: larger;
+            text-decoration: none;
+            margin-left: 5px;
+        }
+        #register:hover{
+            color: darkgrey;
+        }
+        
+        #line1{
+            height: 3px;
+            background-color:rgb(69, 22, 22) ;
+            border: none;
+        }
+        #name{
+            font-size: 18px;
+            font-weight: bold;
+            color:rgb(215, 231, 254);
+            margin-left: 4%;
+            margin-bottom: 2%;
+        }
+        #Box{
+            border: 5px solid rgb(90, 90, 90);
+            font-size: 15px;
+            border-radius: 6px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0 auto;
+            margin-left: 4%;
+        }
+        #image{
+            font-size: large;
+            font-weight: bold;
+            color:cadetblue;
+        }
+        #submit{
+            font-size: x-large;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: white;
+            background-color: rgb(69, 22, 22);
+            border-radius: 5px;
+            margin-left: 32%;
+
+        }
+        #submit:hover{
+            color: rgb(33, 33, 128);
+            background-color: cornflowerblue;
+            cursor: grab;
+        }
+        #reset{
+            font-size: x-large;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: white;
+            background-color: rgb(69, 22, 22);
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        #reset:hover{
+            color: rgb(33, 33, 128);
+            background-color: cornflowerblue;
+            cursor: grab;
+        }
+        #Research{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            border: 5px solid rgb(90, 90, 90);
+            font-size: 15px;
+            border-radius: 7px;
+            margin-left: 2%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <a id="setting" href="/settings.html">Setting</a>
+        <a id="help" href="/help.html">Help</a>
+        <a id="AboutUs" href="/aboutUs.html">About Us</a>
+    </div>
+
+    <div class="container2">
+        <img id = "brain" src="/brain.png" alt="Error 404">
+        <h1 id="loginHeading">Sign Up </h1>
+        <a id="line2">Fill in The Form, and be a part of our CLAN!</a>
+        <hr id="line1">
+        <br>
+        <form action="backend.php">
+            <div id="name">Name <input type="text" name="myName" placeholder="i.e Lexy Diaz" id="Box"></div>
+            <!-- <br> -->
+            <div id="name" >Date Of Birth <input type="date" name="myDate" id="Box"> </div>
+            <!-- <br> -->
+            <div id="name">Email <input type="email" name="myEmail" placeholder="i.e jhon123@gmail.com" id="Box"> </div>
+            <!-- <br> -->
+            <div id="name">Password <input type="password" name="myPass" placeholder="xxxxxx" id="Box"></div>
+            <!-- <br> -->
+            <div id="name">Confirm Password <input type="password" name="mPass" placeholder="xxxxxx" id="Box"></div>
+            <!-- <br> -->
+            <div id="name">Upload Profile Picture <input type="image" name="myImage" id="image" > </div>
+            <!-- <br> -->
+            
+            <div id="name"> Gender: Male<input type="radio" name="myGender" id=""> Female<input type="radio" name="myGender" id=""> </div>
+            <!-- <br> -->
+            <div> <label for="Research?" id="name">Where did you got to know of this software?</label>
+                <select name="myResearch" id="Research" >
+                    <option value="Friends">Friends</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Newspaper">Newspaper</option>
+                    <option value="Google/Web">Google/Web</option>
+                </select>
+             </div>
+            <br>
+            <div id="name"> Do you agree with ABIA terms and conditions? <input type="checkbox" name="myEligibility" id="Box"> </div>
+            <!-- <br>  -->
+            <div> <input type="submit" value="Submit" id="submit">
+            <input type="reset" value="Reset Form" id="reset"> </div>
+        </form>
+        <br>
+        
+    </div>
+
+    <div class="container3">
+        <img id="brain2" src="/brain.png" alt="Error 404">
+    </div>
+    <div class="container4">
+        <h3>testing</h3>
+    </div>
+    
+    
+</body>
+</html>

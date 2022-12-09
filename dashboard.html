@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <style>
+        body{
+            background-color: rgb(42, 40, 40);
+             background-image: url(/shubham-dhage-cHVJBvEp8OM-unsplash.jpg);
+             /* background-size: 1820px 1080px; */
+             background-size: cover;
+             background-position-x: center;
+             width: 99%;
+             height: 100%;
+            /* position: absolute; */
+            background-repeat: no-repeat;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container1{
+            /* container1 will remain on top even while scroling down  */ 
+            position: sticky;
+            top:3px;
+            color: white;
+            width: 100%;
+            /* height: 58px; */
+            border: 10px;
+            border-color: black;
+            border-radius: 7px;
+            background-color: rgb(69, 22, 22);
+        }
+
+        .container2{
+            color: white;
+            background-color: rgb(31, 44, 45);
+            width: 30%;
+            /* height: 600px; */
+            border:3px rgb(69, 22, 22) solid;
+            border-radius:12px;
+            max-width: 30%;
+            margin: 0 auto;
+            margin-top: 300px;
+            opacity: 0.9;
+        }
+        .container3{
+            border: 3px none solid;
+            width: 70px;
+            height: 70px;
+            position: fixed;
+            right:3px;
+            bottom:3px;
+            opacity: 0.5;
+        }
+        .container4{
+            margin-top: 220px;
+            opacity: 0;
+        }
+        #setting{
+            color: rgb(0, 0, 0);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size:x-large;
+            text-decoration: none;
+            margin-left: 1200px;
+            /* padding:; */
+        }
+        #setting:hover{
+            color:cornflowerblue;
+        }
+        #help:hover{
+            color:cornflowerblue;
+        }
+        #help{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: black;
+            font-size: x-large;
+            text-decoration: none;
+            margin-left: 30px;
+        }
+        #AboutUs{
+            color: rgb(0, 0, 0);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size:x-large;
+            text-decoration: none;
+            margin-left: 30px;
+            /* padding:; */
+        }
+        #AboutUs:hover{
+            color:cornflowerblue;
+        }
+        #brain{
+            width: 120px;
+            margin-left: 38%;
+        }
+        #loginHeading{
+            margin-left: 31%;
+            margin-top: 0px;
+            /* font-size:x-large; */
+        }
+        #line2{
+            margin-left: 20%;
+            font-size:large;
+        }
+        .btn{
+            border: 4px black solid;
+            border-radius: 15px;
+            color: white;
+            background-color: rgb(69, 22, 22);
+            text-decoration: none;
+            font-size:70px;
+            font-weight: bold;
+            cursor:grab ;
+
+        }
+        .btn:hover{
+            color: rgb(33, 33, 128);
+            background-color: cornflowerblue;
+        }
+        #brain2{
+            width:65px;
+        }
+        #line1{
+            height: 3px;
+            background-color:rgb(69, 22, 22) ;
+            border: none;
+        }
+        .box{
+            display: inline-block;
+            /* border: 2px solid; */
+            width:150px;
+            height: 150px;
+            /* border: 2px solid black; */
+            margin: 2px;
+            margin-left: 45px;
+        }
+        #size1{
+            width: 45%;
+            margin-top: 30%;
+            margin-left: 26%;
+            margin-bottom: 1px;
+            cursor: grab;
+        }
+        #label1{
+            margin-left: 30px;
+            cursor: grab;
+        }
+        #label1:hover{
+            color:cornflowerblue ;
+        }
+        #size2{
+            width: 45%;
+            margin-top: 28%;
+            margin-left: 30%;
+            /* margin-bottom: 1px; */
+            cursor: grab;
+        }
+        #label2{
+            margin-left: 14px;
+            margin-bottom: 0%;
+            cursor: grab;
+        }
+        #label2:hover{
+            color: cornflowerblue;
+        }
+        #size3{
+            width: 33%;
+            margin-top: 30%;
+            margin-left: 35%;
+            margin-bottom: 1px;
+            cursor: grab;
+        }
+        #label3{
+            margin-left: 18px;
+            cursor: grab;
+        }
+        #label3:hover{
+            color: cornflowerblue;
+        }
+        #size4{
+            width: 53%;
+            margin-top: 40%;
+            margin-left: 27%;
+            margin-bottom: 2px;
+            cursor: grab;
+        }
+        #label4{
+            margin-left: 38px;
+            cursor: grab;
+        }
+        #label4:hover{
+            color:cornflowerblue
+        }
+        #size5{
+            width: 40%;
+            margin-top: 15px;
+            margin-left: 30%;
+            margin-bottom: 2px;
+            cursor: grab;
+        }
+        #label5{
+            margin-left: 10px;
+            cursor :grab;
+        }
+        #label5:hover{
+            color: cornflowerblue;
+        }
+        #size6{
+            width: 45%;
+            margin-top: 20%;
+            margin-left: 30%;
+            margin-bottom: 2px;
+            cursor:grab
+        }
+        #label6{
+            margin-left: 50px;
+            cursor: grab;
+        }
+        #label6:hover{
+            color :cornflowerblue;
+        }
+        
+        
+
+        
+        
+        
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <a id="setting" href="/settings.html">Setting</a>
+        <a id="help" href="/help.html">Help</a>
+        <a id="AboutUs" href="/aboutUs.html">About Us</a>
+    </div>
+
+    <div class="container2">
+        <img id = "brain" src="/brain.png" alt="Error 404">
+        <h1 id="loginHeading">DashBoard</h1>
+        <a id="line2">Select the options that suits you better.</a>
+        <hr id="line1">
+        <div  class="box">
+            <a href=""><img id="size1" src="/viewProfile.png" alt="Error 404"></a>
+        <Strong id="label1">View Profile</Strong>
+        </div>
+        <div  class="box">
+            <a href=""><img id="size2" src="/facialexpression.png" alt="Error 404"></a>
+        <Strong id="label2">Facial Feautures</Strong>
+        </div>
+        <br>
+        <div class="box">
+            <a href=""><img id="size3" src="/voicerecog.png" alt="Error 404"></a>
+        <Strong id="label3">Vocal Feautures</Strong>
+        </div>
+        <div class="box">
+            <a href=""><img id="size4" src="/repository.png" alt="Error 404"></a>
+        <Strong id="label4">Repository</Strong>
+        </div>
+        <br>
+        <div class="box">
+            <a href=""><img id="size5" src="/changePass.png" alt="Error 404"></a>
+        <Strong id="label5">Change Password</Strong>
+        </div>
+        <div class="box">
+            <a href="/userSignIn.html"><img id="size6" src="/logout.png" alt="Error 404"></a>
+        <Strong id="label6">Log out</Strong>
+        </div>
+
+         
+    </div>
+        
+
+    <div class="container3">
+        <img id="brain2" src="/brain.png" alt="Error 404">
+    </div>
+    <div class="container4">
+        <h3>testing</h3>
+    </div>
+    
+    
+</body>
+</html>
